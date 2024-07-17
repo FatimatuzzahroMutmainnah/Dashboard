@@ -17,3 +17,6 @@ A simple Streamlit Dashboard about Submission Training!
    ```
    $ streamlit run streamlit_app.py
    ```
+
+![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view1)
+![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view2)
