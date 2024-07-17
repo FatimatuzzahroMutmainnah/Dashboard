@@ -36,7 +36,7 @@ def get_data_from_excel():
   data.drop(columns=['NRP', 'NAMA', 'JABATAN', 'AREA', 'JENIS KOMPETENSI', 'Grouping2'], inplace=True)
   # Mengganti nilai di kolom 'GROUPING'
   data['Grouping'] = data['Grouping'].replace('External - Inhouse Training', 'External - InHouse Training')
-  cut_labels = ['Kecil', 'Menengah', 'Besar']
+  cut_labels = ['Small', 'Medium', 'Large']
   data['Cost_segment'] = pd.qcut(data['PLAN BIAYA'][data['PLAN BIAYA']>0],q=[0, .25, .75, 1], labels=cut_labels).astype("object")
   # Menghapus outlier
   data.drop(data[data['PLAN BIAYA'] == 261000000].index, inplace=True)
