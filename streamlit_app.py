@@ -23,7 +23,8 @@ import seaborn as sns
 
 #Import Data
 def get_data_from_excel():
-  df = pd.read_excel("https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/Biaya%20Pelatihan.xlsx", sheet_name='External & Certification Ra (2)')
+  url = "https://raw.githubusercontent.com/FatimatuzzahroMutmainnah/Dashboard/main/Biaya%20Pelatihan.xlsx"
+  df = pd.read_excel(url, sheet_name='External & Certification Ra (2)')
   data = df.iloc[:2119, :15]
   # Nama kolom yang ingin dipindahkan ke paling akhir
   column_to_move = ' PLAN BIAYA R4 (Bold merah: adanya adjustment dari budget sebelumnya)'
