@@ -23,15 +23,15 @@ import seaborn as sns
 
 #Import Data
 def get_data_from_excel():
-  url = "https://raw.githubusercontent.com/FatimatuzzahroMutmainnah/Dashboard/main/Biaya%20Pelatihan.xlsx"
+  url = "https://github.com/FatimatuzzahroMutmainnah/Dashboard/raw/main/Biaya%20Pelatihan.xlsx"
   df = pd.read_excel(url, sheet_name='External & Certification Ra (2)')
   data = df.iloc[:2119, :15]
   # Nama kolom yang ingin dipindahkan ke paling akhir
-  column_to_move = ' PLAN BIAYA R4 (Bold merah: adanya adjustment dari budget sebelumnya)'
+  column_to_move = ' PLAN BIAYA (Bold merah: adanya adjustment)'
   # Memindahkan kolom ke paling akhir
   data = data[[*data.drop(columns=column_to_move), column_to_move]]
   # Mengubah nama kolom
-  data.rename(columns={' PLAN BIAYA R4 (Bold merah: adanya adjustment dari budget sebelumnya)': 'PLAN BIAYA'}, inplace=True)
+  data.rename(columns={' PLAN BIAYA (Bold merah: adanya adjustment)': 'PLAN BIAYA'}, inplace=True)
   #mengahpus kolom yang tidak digunakan
   data.drop(columns=['NRP', 'NAMA', 'JABATAN', 'AREA', 'JENIS KOMPETENSI', 'Grouping2'], inplace=True)
   # Mengganti nilai di kolom 'GROUPING'
