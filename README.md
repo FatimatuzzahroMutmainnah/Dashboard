@@ -1,10 +1,20 @@
 # 📋 Training Submission Dashboard
 
-A simple Streamlit Dashboard about Training Submission!
+![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view1)
+![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view2)
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://subdash.streamlit.app/)
+### 🔎 Overview
+
+<p align="left">The Training Submission Dashboard provides an interactive interface to explore and analyze training submission data. It allows users to filter data based on the type of training and work area and provides various visualizations to understand the distribution and classification of training submissions.</p>
+
+### 📑 Data Source
+
+<p align="left">
+  - 📑 <strong>Data:</strong> The dataset used for this analysis was provided by a company specializing in machinery. It includes detailed information on training submissions, including the types of training, areas of submission, and associated costs. The dataset comprises 2114 records and 15 variables.</p>
 
 ### How to run it on your own machine
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://subdash.streamlit.app/)
 
 1. Install the requirements
 
@@ -17,18 +27,6 @@ A simple Streamlit Dashboard about Training Submission!
    ```
    $ streamlit run streamlit_app.py
    ```
-
-![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view1)
-![image1](https://github.com/FatimatuzzahroMutmainnah/Dashboard/blob/main/dashboard%20image/view2)
-
-### 🔎 Overview
-
-<p align="left">The Training Submission Dashboard provides an interactive interface to explore and analyze training submission data. It allows users to filter data based on the type of training and work area and provides various visualizations to understand the distribution and classification of training submissions.</p>
-
-### 📑 Data Source
-
-<p align="left">
-  - 📑 <strong>Data:</strong> The dataset used for this analysis was provided by a company specializing in machinery. It includes detailed information on training submissions, including the types of training, areas of submission, and associated costs. The dataset comprises 2114 records and 15 variables.</p>
 
 ### 📊 Features
 
